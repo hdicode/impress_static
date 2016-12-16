@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Hdi Impress</title>
+    <meta name="description" content="Hdi Impress using impress.js." />
+    <meta name="author" content="hdicode" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+<body class="impress-not-supported">
+<div class="fallback-message">
+    <p>Browser kamu tidak mendukung untuk melihat halaman ini, silahkan gunakan browser lain.</p>
+</div>
+
+<div id="impress">
+    <div id="intro" class="step" data-x="0" data-y="0" data-scale="2">
+        <div class="kotak">
+            <p>Intro</p>
+            <a href="index.html#/intro2">to 2</a>
+            <a href="index.html#/intro3">to 3</a>
+            <a href="index.html#/intro4">to 4</a>
+            <a href="index.html#/intro5">to 5</a>
+            <a href="index.html#/intro6">to 6</a>
+        </div>
+    </div>
+    <div id="intro2" class="step" data-x="2000" data-y="-2000" data-z="1000" data-rotate-x="-90" data-rotate-y="-40" data-rotate-z="10" data-scale="2">
+        <div class="kotak">
+            <p>Intro 2</p>
+            <a href="javascript:history.back()">back</a>
+        </div>
+    </div>
+    <div id="intro3" class="step" data-x="-500" data-y="700" data-z="400" data-rotate-x="-90" data-rotate-y="0" data-rotate-z="0" data-scale="2">
+        <div class="kotak">
+            <p>Intro 3</p>
+            <a href="javascript:history.back()">back</a>
+        </div>
+    </div>
+    <div id="intro4" class="step" data-x="1000" data-y="800" data-z="600" data-rotate-x="-80" data-rotate-y="25" data-rotate-z="-10" data-scale="2">
+        <div class="kotak">
+            <p>Intro 4</p>
+            <a href="javascript:history.back()">back</a>
+        </div>
+    </div>
+    <div id="intro5" class="step" data-x="-1500" data-y="100" data-z="200" data-rotate-x="0" data-rotate-y="-90" data-rotate-z="90" data-scale="2">
+        <div class="kotak">
+            <p>Intro 5</p>
+            <a href="javascript:history.back()">back</a>
+        </div>
+    </div>
+    <div id="intro6" class="step" data-x="0" data-y="0" data-z="-5000" data-rotate-x="540" data-rotate-y="0" data-rotate-z="0" data-scale="2">
+        <div class="kotak">
+            <p>Intro 6</p>
+            <a href="javascript:history.back()">back</a>
+        </div>
+    </div>
+
+    <!--
+    <div id="overview" class="step" data-x="0" data-y="0" data-scale="7">
+    </div>
+    -->
+</div>
+
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+</body>
+</html>
